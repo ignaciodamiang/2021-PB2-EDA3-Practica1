@@ -1,12 +1,16 @@
 package ar.edu.unlam.pbii.grupo01;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import ar.edu.unlam.pbii.grupo01.enumeradores.Premium;
+import ar.edu.unlam.pbii.grupo01.Cliente;
+import ar.edu.unlam.pbii.grupo01.ClienteBandaAncha;
+import ar.edu.unlam.pbii.grupo01.ClienteCable;
+import ar.edu.unlam.pbii.grupo01.ClienteTelefonia;
+import ar.edu.unlam.pbii.grupo01.ClienteTri;
+import ar.edu.unlam.pbii.grupo01.Empresa;
+import ar.edu.unlam.pbii.grupo01.Premium;
 
 public class Grupo01 {
 
@@ -31,6 +35,7 @@ public class Grupo01 {
 	public void  queSePuedaCrearUnClienteDeBandaAncha() {
 		ClienteBandaAncha nuevo = new ClienteBandaAncha(1000, "Camila", "camila@telecomunications.com");
 
+		
 		assertEquals(nuevo.getEMail(), "camila@telecomunications.com");
 		
 	}
